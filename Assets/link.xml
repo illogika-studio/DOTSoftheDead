@@ -1,0 +1,7 @@
+<linker>
+  <assembly fullname="Unity.Rendering.Hybrid" preserve="all"/>
+  <assembly fullname="Unity.Entities" preserve="all"/>
+  <assembly fullname="Unity.Entities.Hybrid" preserve="all"/>
+  <assembly fullname="Unity.Transforms" preserve="all"/>
+  <assembly fullname="Unity.Transforms.Hybrid" preserve="all"/>
+</linker>

@@ -1,0 +1,1969 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1020576454600066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224221452225482132}
+  - component: {fileID: 223439358252320548}
+  - component: {fileID: 114341938431039670}
+  - component: {fileID: 114749635295600240}
+  m_Layer: 5
+  m_Name: FramerateDebugPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224221452225482132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020576454600066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 224017663050097440}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &223439358252320548
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020576454600066}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &114341938431039670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020576454600066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &114749635295600240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020576454600066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e404bfefdeb79904e847365ad9c6c205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PollingRate: 1
+  PhysicsRate: {fileID: 114626742301301008}
+  PhysicsFPS: {fileID: 114821588659937904}
+  AvgFPS: {fileID: 114571333611172312}
+  AvgFPSMin: {fileID: 114524354276376198}
+  AvgFPSMax: {fileID: 114136477695530754}
+  FramerateStrings:
+  - 0 (Infinityms)
+  - 1 (1000.00ms)
+  - 2 (500.00ms)
+  - 3 (333.33ms)
+  - 4 (250.00ms)
+  - 5 (200.00ms)
+  - 6 (166.67ms)
+  - 7 (142.86ms)
+  - 8 (125.00ms)
+  - 9 (111.11ms)
+  - 10 (100.00ms)
+  - 11 (90.91ms)
+  - 12 (83.33ms)
+  - 13 (76.92ms)
+  - 14 (71.43ms)
+  - 15 (66.67ms)
+  - 16 (62.50ms)
+  - 17 (58.82ms)
+  - 18 (55.56ms)
+  - 19 (52.63ms)
+  - 20 (50.00ms)
+  - 21 (47.62ms)
+  - 22 (45.45ms)
+  - 23 (43.48ms)
+  - 24 (41.67ms)
+  - 25 (40.00ms)
+  - 26 (38.46ms)
+  - 27 (37.04ms)
+  - 28 (35.71ms)
+  - 29 (34.48ms)
+  - 30 (33.33ms)
+  - 31 (32.26ms)
+  - 32 (31.25ms)
+  - 33 (30.30ms)
+  - 34 (29.41ms)
+  - 35 (28.57ms)
+  - 36 (27.78ms)
+  - 37 (27.03ms)
+  - 38 (26.32ms)
+  - 39 (25.64ms)
+  - 40 (25.00ms)
+  - 41 (24.39ms)
+  - 42 (23.81ms)
+  - 43 (23.26ms)
+  - 44 (22.73ms)
+  - 45 (22.22ms)
+  - 46 (21.74ms)
+  - 47 (21.28ms)
+  - 48 (20.83ms)
+  - 49 (20.41ms)
+  - 50 (20.00ms)
+  - 51 (19.61ms)
+  - 52 (19.23ms)
+  - 53 (18.87ms)
+  - 54 (18.52ms)
+  - 55 (18.18ms)
+  - 56 (17.86ms)
+  - 57 (17.54ms)
+  - 58 (17.24ms)
+  - 59 (16.95ms)
+  - 60 (16.67ms)
+  - 61 (16.39ms)
+  - 62 (16.13ms)
+  - 63 (15.87ms)
+  - 64 (15.63ms)
+  - 65 (15.38ms)
+  - 66 (15.15ms)
+  - 67 (14.93ms)
+  - 68 (14.71ms)
+  - 69 (14.49ms)
+  - 70 (14.29ms)
+  - 71 (14.08ms)
+  - 72 (13.89ms)
+  - 73 (13.70ms)
+  - 74 (13.51ms)
+  - 75 (13.33ms)
+  - 76 (13.16ms)
+  - 77 (12.99ms)
+  - 78 (12.82ms)
+  - 79 (12.66ms)
+  - 80 (12.50ms)
+  - 81 (12.35ms)
+  - 82 (12.20ms)
+  - 83 (12.05ms)
+  - 84 (11.90ms)
+  - 85 (11.76ms)
+  - 86 (11.63ms)
+  - 87 (11.49ms)
+  - 88 (11.36ms)
+  - 89 (11.24ms)
+  - 90 (11.11ms)
+  - 91 (10.99ms)
+  - 92 (10.87ms)
+  - 93 (10.75ms)
+  - 94 (10.64ms)
+  - 95 (10.53ms)
+  - 96 (10.42ms)
+  - 97 (10.31ms)
+  - 98 (10.20ms)
+  - 99 (10.10ms)
+  - 100 (10.00ms)
+  - 101 (9.90ms)
+  - 102 (9.80ms)
+  - 103 (9.71ms)
+  - 104 (9.62ms)
+  - 105 (9.52ms)
+  - 106 (9.43ms)
+  - 107 (9.35ms)
+  - 108 (9.26ms)
+  - 109 (9.17ms)
+  - 110 (9.09ms)
+  - 111 (9.01ms)
+  - 112 (8.93ms)
+  - 113 (8.85ms)
+  - 114 (8.77ms)
+  - 115 (8.70ms)
+  - 116 (8.62ms)
+  - 117 (8.55ms)
+  - 118 (8.47ms)
+  - 119 (8.40ms)
+  - 120 (8.33ms)
+  - 121 (8.26ms)
+  - 122 (8.20ms)
+  - 123 (8.13ms)
+  - 124 (8.06ms)
+  - 125 (8.00ms)
+  - 126 (7.94ms)
+  - 127 (7.87ms)
+  - 128 (7.81ms)
+  - 129 (7.75ms)
+  - 130 (7.69ms)
+  - 131 (7.63ms)
+  - 132 (7.58ms)
+  - 133 (7.52ms)
+  - 134 (7.46ms)
+  - 135 (7.41ms)
+  - 136 (7.35ms)
+  - 137 (7.30ms)
+  - 138 (7.25ms)
+  - 139 (7.19ms)
+  - 140 (7.14ms)
+  - 141 (7.09ms)
+  - 142 (7.04ms)
+  - 143 (6.99ms)
+  - 144 (6.94ms)
+  - 145 (6.90ms)
+  - 146 (6.85ms)
+  - 147 (6.80ms)
+  - 148 (6.76ms)
+  - 149 (6.71ms)
+  - 150 (6.67ms)
+  - 151 (6.62ms)
+  - 152 (6.58ms)
+  - 153 (6.54ms)
+  - 154 (6.49ms)
+  - 155 (6.45ms)
+  - 156 (6.41ms)
+  - 157 (6.37ms)
+  - 158 (6.33ms)
+  - 159 (6.29ms)
+  - 160 (6.25ms)
+  - 161 (6.21ms)
+  - 162 (6.17ms)
+  - 163 (6.13ms)
+  - 164 (6.10ms)
+  - 165 (6.06ms)
+  - 166 (6.02ms)
+  - 167 (5.99ms)
+  - 168 (5.95ms)
+  - 169 (5.92ms)
+  - 170 (5.88ms)
+  - 171 (5.85ms)
+  - 172 (5.81ms)
+  - 173 (5.78ms)
+  - 174 (5.75ms)
+  - 175 (5.71ms)
+  - 176 (5.68ms)
+  - 177 (5.65ms)
+  - 178 (5.62ms)
+  - 179 (5.59ms)
+  - 180 (5.56ms)
+  - 181 (5.52ms)
+  - 182 (5.49ms)
+  - 183 (5.46ms)
+  - 184 (5.43ms)
+  - 185 (5.41ms)
+  - 186 (5.38ms)
+  - 187 (5.35ms)
+  - 188 (5.32ms)
+  - 189 (5.29ms)
+  - 190 (5.26ms)
+  - 191 (5.24ms)
+  - 192 (5.21ms)
+  - 193 (5.18ms)
+  - 194 (5.15ms)
+  - 195 (5.13ms)
+  - 196 (5.10ms)
+  - 197 (5.08ms)
+  - 198 (5.05ms)
+  - 199 (5.03ms)
+  - 200 (5.00ms)
+  - 201 (4.98ms)
+  - 202 (4.95ms)
+  - 203 (4.93ms)
+  - 204 (4.90ms)
+  - 205 (4.88ms)
+  - 206 (4.85ms)
+  - 207 (4.83ms)
+  - 208 (4.81ms)
+  - 209 (4.78ms)
+  - 210 (4.76ms)
+  - 211 (4.74ms)
+  - 212 (4.72ms)
+  - 213 (4.69ms)
+  - 214 (4.67ms)
+  - 215 (4.65ms)
+  - 216 (4.63ms)
+  - 217 (4.61ms)
+  - 218 (4.59ms)
+  - 219 (4.57ms)
+  - 220 (4.55ms)
+  - 221 (4.52ms)
+  - 222 (4.50ms)
+  - 223 (4.48ms)
+  - 224 (4.46ms)
+  - 225 (4.44ms)
+  - 226 (4.42ms)
+  - 227 (4.41ms)
+  - 228 (4.39ms)
+  - 229 (4.37ms)
+  - 230 (4.35ms)
+  - 231 (4.33ms)
+  - 232 (4.31ms)
+  - 233 (4.29ms)
+  - 234 (4.27ms)
+  - 235 (4.26ms)
+  - 236 (4.24ms)
+  - 237 (4.22ms)
+  - 238 (4.20ms)
+  - 239 (4.18ms)
+  - 240 (4.17ms)
+  - 241 (4.15ms)
+  - 242 (4.13ms)
+  - 243 (4.12ms)
+  - 244 (4.10ms)
+  - 245 (4.08ms)
+  - 246 (4.07ms)
+  - 247 (4.05ms)
+  - 248 (4.03ms)
+  - 249 (4.02ms)
+  - 250 (4.00ms)
+  - 251 (3.98ms)
+  - 252 (3.97ms)
+  - 253 (3.95ms)
+  - 254 (3.94ms)
+  - 255 (3.92ms)
+  - 256 (3.91ms)
+  - 257 (3.89ms)
+  - 258 (3.88ms)
+  - 259 (3.86ms)
+  - 260 (3.85ms)
+  - 261 (3.83ms)
+  - 262 (3.82ms)
+  - 263 (3.80ms)
+  - 264 (3.79ms)
+  - 265 (3.77ms)
+  - 266 (3.76ms)
+  - 267 (3.75ms)
+  - 268 (3.73ms)
+  - 269 (3.72ms)
+  - 270 (3.70ms)
+  - 271 (3.69ms)
+  - 272 (3.68ms)
+  - 273 (3.66ms)
+  - 274 (3.65ms)
+  - 275 (3.64ms)
+  - 276 (3.62ms)
+  - 277 (3.61ms)
+  - 278 (3.60ms)
+  - 279 (3.58ms)
+  - 280 (3.57ms)
+  - 281 (3.56ms)
+  - 282 (3.55ms)
+  - 283 (3.53ms)
+  - 284 (3.52ms)
+  - 285 (3.51ms)
+  - 286 (3.50ms)
+  - 287 (3.48ms)
+  - 288 (3.47ms)
+  - 289 (3.46ms)
+  - 290 (3.45ms)
+  - 291 (3.44ms)
+  - 292 (3.42ms)
+  - 293 (3.41ms)
+  - 294 (3.40ms)
+  - 295 (3.39ms)
+  - 296 (3.38ms)
+  - 297 (3.37ms)
+  - 298 (3.36ms)
+  - 299 (3.34ms)
+  - 300 (3.33ms)
+  - 301 (3.32ms)
+  - 302 (3.31ms)
+  - 303 (3.30ms)
+  - 304 (3.29ms)
+  - 305 (3.28ms)
+  - 306 (3.27ms)
+  - 307 (3.26ms)
+  - 308 (3.25ms)
+  - 309 (3.24ms)
+  - 310 (3.23ms)
+  - 311 (3.22ms)
+  - 312 (3.21ms)
+  - 313 (3.19ms)
+  - 314 (3.18ms)
+  - 315 (3.17ms)
+  - 316 (3.16ms)
+  - 317 (3.15ms)
+  - 318 (3.14ms)
+  - 319 (3.13ms)
+  - 320 (3.13ms)
+  - 321 (3.12ms)
+  - 322 (3.11ms)
+  - 323 (3.10ms)
+  - 324 (3.09ms)
+  - 325 (3.08ms)
+  - 326 (3.07ms)
+  - 327 (3.06ms)
+  - 328 (3.05ms)
+  - 329 (3.04ms)
+  - 330 (3.03ms)
+  - 331 (3.02ms)
+  - 332 (3.01ms)
+  - 333 (3.00ms)
+  - 334 (2.99ms)
+  - 335 (2.99ms)
+  - 336 (2.98ms)
+  - 337 (2.97ms)
+  - 338 (2.96ms)
+  - 339 (2.95ms)
+  - 340 (2.94ms)
+  - 341 (2.93ms)
+  - 342 (2.92ms)
+  - 343 (2.92ms)
+  - 344 (2.91ms)
+  - 345 (2.90ms)
+  - 346 (2.89ms)
+  - 347 (2.88ms)
+  - 348 (2.87ms)
+  - 349 (2.87ms)
+  - 350 (2.86ms)
+  - 351 (2.85ms)
+  - 352 (2.84ms)
+  - 353 (2.83ms)
+  - 354 (2.82ms)
+  - 355 (2.82ms)
+  - 356 (2.81ms)
+  - 357 (2.80ms)
+  - 358 (2.79ms)
+  - 359 (2.79ms)
+  - 360 (2.78ms)
+  - 361 (2.77ms)
+  - 362 (2.76ms)
+  - 363 (2.75ms)
+  - 364 (2.75ms)
+  - 365 (2.74ms)
+  - 366 (2.73ms)
+  - 367 (2.72ms)
+  - 368 (2.72ms)
+  - 369 (2.71ms)
+  - 370 (2.70ms)
+  - 371 (2.70ms)
+  - 372 (2.69ms)
+  - 373 (2.68ms)
+  - 374 (2.67ms)
+  - 375 (2.67ms)
+  - 376 (2.66ms)
+  - 377 (2.65ms)
+  - 378 (2.65ms)
+  - 379 (2.64ms)
+  - 380 (2.63ms)
+  - 381 (2.62ms)
+  - 382 (2.62ms)
+  - 383 (2.61ms)
+  - 384 (2.60ms)
+  - 385 (2.60ms)
+  - 386 (2.59ms)
+  - 387 (2.58ms)
+  - 388 (2.58ms)
+  - 389 (2.57ms)
+  - 390 (2.56ms)
+  - 391 (2.56ms)
+  - 392 (2.55ms)
+  - 393 (2.54ms)
+  - 394 (2.54ms)
+  - 395 (2.53ms)
+  - 396 (2.53ms)
+  - 397 (2.52ms)
+  - 398 (2.51ms)
+  - 399 (2.51ms)
+  - 400 (2.50ms)
+  - 401 (2.49ms)
+  - 402 (2.49ms)
+  - 403 (2.48ms)
+  - 404 (2.48ms)
+  - 405 (2.47ms)
+  - 406 (2.46ms)
+  - 407 (2.46ms)
+  - 408 (2.45ms)
+  - 409 (2.44ms)
+  - 410 (2.44ms)
+  - 411 (2.43ms)
+  - 412 (2.43ms)
+  - 413 (2.42ms)
+  - 414 (2.42ms)
+  - 415 (2.41ms)
+  - 416 (2.40ms)
+  - 417 (2.40ms)
+  - 418 (2.39ms)
+  - 419 (2.39ms)
+  - 420 (2.38ms)
+  - 421 (2.38ms)
+  - 422 (2.37ms)
+  - 423 (2.36ms)
+  - 424 (2.36ms)
+  - 425 (2.35ms)
+  - 426 (2.35ms)
+  - 427 (2.34ms)
+  - 428 (2.34ms)
+  - 429 (2.33ms)
+  - 430 (2.33ms)
+  - 431 (2.32ms)
+  - 432 (2.31ms)
+  - 433 (2.31ms)
+  - 434 (2.30ms)
+  - 435 (2.30ms)
+  - 436 (2.29ms)
+  - 437 (2.29ms)
+  - 438 (2.28ms)
+  - 439 (2.28ms)
+  - 440 (2.27ms)
+  - 441 (2.27ms)
+  - 442 (2.26ms)
+  - 443 (2.26ms)
+  - 444 (2.25ms)
+  - 445 (2.25ms)
+  - 446 (2.24ms)
+  - 447 (2.24ms)
+  - 448 (2.23ms)
+  - 449 (2.23ms)
+  - 450 (2.22ms)
+  - 451 (2.22ms)
+  - 452 (2.21ms)
+  - 453 (2.21ms)
+  - 454 (2.20ms)
+  - 455 (2.20ms)
+  - 456 (2.19ms)
+  - 457 (2.19ms)
+  - 458 (2.18ms)
+  - 459 (2.18ms)
+  - 460 (2.17ms)
+  - 461 (2.17ms)
+  - 462 (2.16ms)
+  - 463 (2.16ms)
+  - 464 (2.16ms)
+  - 465 (2.15ms)
+  - 466 (2.15ms)
+  - 467 (2.14ms)
+  - 468 (2.14ms)
+  - 469 (2.13ms)
+  - 470 (2.13ms)
+  - 471 (2.12ms)
+  - 472 (2.12ms)
+  - 473 (2.11ms)
+  - 474 (2.11ms)
+  - 475 (2.11ms)
+  - 476 (2.10ms)
+  - 477 (2.10ms)
+  - 478 (2.09ms)
+  - 479 (2.09ms)
+  - 480 (2.08ms)
+  - 481 (2.08ms)
+  - 482 (2.07ms)
+  - 483 (2.07ms)
+  - 484 (2.07ms)
+  - 485 (2.06ms)
+  - 486 (2.06ms)
+  - 487 (2.05ms)
+  - 488 (2.05ms)
+  - 489 (2.04ms)
+  - 490 (2.04ms)
+  - 491 (2.04ms)
+  - 492 (2.03ms)
+  - 493 (2.03ms)
+  - 494 (2.02ms)
+  - 495 (2.02ms)
+  - 496 (2.02ms)
+  - 497 (2.01ms)
+  - 498 (2.01ms)
+  - 499 (2.00ms)
+  - 500 (2.00ms)
+  - 501 (2.00ms)
+  - 502 (1.99ms)
+  - 503 (1.99ms)
+  - 504 (1.98ms)
+  - 505 (1.98ms)
+  - 506 (1.98ms)
+  - 507 (1.97ms)
+  - 508 (1.97ms)
+  - 509 (1.96ms)
+  - 510 (1.96ms)
+  - 511 (1.96ms)
+  - 512 (1.95ms)
+  - 513 (1.95ms)
+  - 514 (1.95ms)
+  - 515 (1.94ms)
+  - 516 (1.94ms)
+  - 517 (1.93ms)
+  - 518 (1.93ms)
+  - 519 (1.93ms)
+  - 520 (1.92ms)
+  - 521 (1.92ms)
+  - 522 (1.92ms)
+  - 523 (1.91ms)
+  - 524 (1.91ms)
+  - 525 (1.90ms)
+  - 526 (1.90ms)
+  - 527 (1.90ms)
+  - 528 (1.89ms)
+  - 529 (1.89ms)
+  - 530 (1.89ms)
+  - 531 (1.88ms)
+  - 532 (1.88ms)
+  - 533 (1.88ms)
+  - 534 (1.87ms)
+  - 535 (1.87ms)
+  - 536 (1.87ms)
+  - 537 (1.86ms)
+  - 538 (1.86ms)
+  - 539 (1.86ms)
+  - 540 (1.85ms)
+  - 541 (1.85ms)
+  - 542 (1.85ms)
+  - 543 (1.84ms)
+  - 544 (1.84ms)
+  - 545 (1.83ms)
+  - 546 (1.83ms)
+  - 547 (1.83ms)
+  - 548 (1.82ms)
+  - 549 (1.82ms)
+  - 550 (1.82ms)
+  - 551 (1.81ms)
+  - 552 (1.81ms)
+  - 553 (1.81ms)
+  - 554 (1.81ms)
+  - 555 (1.80ms)
+  - 556 (1.80ms)
+  - 557 (1.80ms)
+  - 558 (1.79ms)
+  - 559 (1.79ms)
+  - 560 (1.79ms)
+  - 561 (1.78ms)
+  - 562 (1.78ms)
+  - 563 (1.78ms)
+  - 564 (1.77ms)
+  - 565 (1.77ms)
+  - 566 (1.77ms)
+  - 567 (1.76ms)
+  - 568 (1.76ms)
+  - 569 (1.76ms)
+  - 570 (1.75ms)
+  - 571 (1.75ms)
+  - 572 (1.75ms)
+  - 573 (1.75ms)
+  - 574 (1.74ms)
+  - 575 (1.74ms)
+  - 576 (1.74ms)
+  - 577 (1.73ms)
+  - 578 (1.73ms)
+  - 579 (1.73ms)
+  - 580 (1.72ms)
+  - 581 (1.72ms)
+  - 582 (1.72ms)
+  - 583 (1.72ms)
+  - 584 (1.71ms)
+  - 585 (1.71ms)
+  - 586 (1.71ms)
+  - 587 (1.70ms)
+  - 588 (1.70ms)
+  - 589 (1.70ms)
+  - 590 (1.69ms)
+  - 591 (1.69ms)
+  - 592 (1.69ms)
+  - 593 (1.69ms)
+  - 594 (1.68ms)
+  - 595 (1.68ms)
+  - 596 (1.68ms)
+  - 597 (1.68ms)
+  - 598 (1.67ms)
+  - 599 (1.67ms)
+  - 600 (1.67ms)
+  - 601 (1.66ms)
+  - 602 (1.66ms)
+  - 603 (1.66ms)
+  - 604 (1.66ms)
+  - 605 (1.65ms)
+  - 606 (1.65ms)
+  - 607 (1.65ms)
+  - 608 (1.64ms)
+  - 609 (1.64ms)
+  - 610 (1.64ms)
+  - 611 (1.64ms)
+  - 612 (1.63ms)
+  - 613 (1.63ms)
+  - 614 (1.63ms)
+  - 615 (1.63ms)
+  - 616 (1.62ms)
+  - 617 (1.62ms)
+  - 618 (1.62ms)
+  - 619 (1.62ms)
+  - 620 (1.61ms)
+  - 621 (1.61ms)
+  - 622 (1.61ms)
+  - 623 (1.61ms)
+  - 624 (1.60ms)
+  - 625 (1.60ms)
+  - 626 (1.60ms)
+  - 627 (1.59ms)
+  - 628 (1.59ms)
+  - 629 (1.59ms)
+  - 630 (1.59ms)
+  - 631 (1.58ms)
+  - 632 (1.58ms)
+  - 633 (1.58ms)
+  - 634 (1.58ms)
+  - 635 (1.57ms)
+  - 636 (1.57ms)
+  - 637 (1.57ms)
+  - 638 (1.57ms)
+  - 639 (1.56ms)
+  - 640 (1.56ms)
+  - 641 (1.56ms)
+  - 642 (1.56ms)
+  - 643 (1.56ms)
+  - 644 (1.55ms)
+  - 645 (1.55ms)
+  - 646 (1.55ms)
+  - 647 (1.55ms)
+  - 648 (1.54ms)
+  - 649 (1.54ms)
+  - 650 (1.54ms)
+  - 651 (1.54ms)
+  - 652 (1.53ms)
+  - 653 (1.53ms)
+  - 654 (1.53ms)
+  - 655 (1.53ms)
+  - 656 (1.52ms)
+  - 657 (1.52ms)
+  - 658 (1.52ms)
+  - 659 (1.52ms)
+  - 660 (1.52ms)
+  - 661 (1.51ms)
+  - 662 (1.51ms)
+  - 663 (1.51ms)
+  - 664 (1.51ms)
+  - 665 (1.50ms)
+  - 666 (1.50ms)
+  - 667 (1.50ms)
+  - 668 (1.50ms)
+  - 669 (1.49ms)
+  - 670 (1.49ms)
+  - 671 (1.49ms)
+  - 672 (1.49ms)
+  - 673 (1.49ms)
+  - 674 (1.48ms)
+  - 675 (1.48ms)
+  - 676 (1.48ms)
+  - 677 (1.48ms)
+  - 678 (1.47ms)
+  - 679 (1.47ms)
+  - 680 (1.47ms)
+  - 681 (1.47ms)
+  - 682 (1.47ms)
+  - 683 (1.46ms)
+  - 684 (1.46ms)
+  - 685 (1.46ms)
+  - 686 (1.46ms)
+  - 687 (1.46ms)
+  - 688 (1.45ms)
+  - 689 (1.45ms)
+  - 690 (1.45ms)
+  - 691 (1.45ms)
+  - 692 (1.45ms)
+  - 693 (1.44ms)
+  - 694 (1.44ms)
+  - 695 (1.44ms)
+  - 696 (1.44ms)
+  - 697 (1.43ms)
+  - 698 (1.43ms)
+  - 699 (1.43ms)
+  - 700 (1.43ms)
+  - 701 (1.43ms)
+  - 702 (1.42ms)
+  - 703 (1.42ms)
+  - 704 (1.42ms)
+  - 705 (1.42ms)
+  - 706 (1.42ms)
+  - 707 (1.41ms)
+  - 708 (1.41ms)
+  - 709 (1.41ms)
+  - 710 (1.41ms)
+  - 711 (1.41ms)
+  - 712 (1.40ms)
+  - 713 (1.40ms)
+  - 714 (1.40ms)
+  - 715 (1.40ms)
+  - 716 (1.40ms)
+  - 717 (1.39ms)
+  - 718 (1.39ms)
+  - 719 (1.39ms)
+  - 720 (1.39ms)
+  - 721 (1.39ms)
+  - 722 (1.39ms)
+  - 723 (1.38ms)
+  - 724 (1.38ms)
+  - 725 (1.38ms)
+  - 726 (1.38ms)
+  - 727 (1.38ms)
+  - 728 (1.37ms)
+  - 729 (1.37ms)
+  - 730 (1.37ms)
+  - 731 (1.37ms)
+  - 732 (1.37ms)
+  - 733 (1.36ms)
+  - 734 (1.36ms)
+  - 735 (1.36ms)
+  - 736 (1.36ms)
+  - 737 (1.36ms)
+  - 738 (1.36ms)
+  - 739 (1.35ms)
+  - 740 (1.35ms)
+  - 741 (1.35ms)
+  - 742 (1.35ms)
+  - 743 (1.35ms)
+  - 744 (1.34ms)
+  - 745 (1.34ms)
+  - 746 (1.34ms)
+  - 747 (1.34ms)
+  - 748 (1.34ms)
+  - 749 (1.34ms)
+  - 750 (1.33ms)
+  - 751 (1.33ms)
+  - 752 (1.33ms)
+  - 753 (1.33ms)
+  - 754 (1.33ms)
+  - 755 (1.32ms)
+  - 756 (1.32ms)
+  - 757 (1.32ms)
+  - 758 (1.32ms)
+  - 759 (1.32ms)
+  - 760 (1.32ms)
+  - 761 (1.31ms)
+  - 762 (1.31ms)
+  - 763 (1.31ms)
+  - 764 (1.31ms)
+  - 765 (1.31ms)
+  - 766 (1.31ms)
+  - 767 (1.30ms)
+  - 768 (1.30ms)
+  - 769 (1.30ms)
+  - 770 (1.30ms)
+  - 771 (1.30ms)
+  - 772 (1.30ms)
+  - 773 (1.29ms)
+  - 774 (1.29ms)
+  - 775 (1.29ms)
+  - 776 (1.29ms)
+  - 777 (1.29ms)
+  - 778 (1.29ms)
+  - 779 (1.28ms)
+  - 780 (1.28ms)
+  - 781 (1.28ms)
+  - 782 (1.28ms)
+  - 783 (1.28ms)
+  - 784 (1.28ms)
+  - 785 (1.27ms)
+  - 786 (1.27ms)
+  - 787 (1.27ms)
+  - 788 (1.27ms)
+  - 789 (1.27ms)
+  - 790 (1.27ms)
+  - 791 (1.26ms)
+  - 792 (1.26ms)
+  - 793 (1.26ms)
+  - 794 (1.26ms)
+  - 795 (1.26ms)
+  - 796 (1.26ms)
+  - 797 (1.25ms)
+  - 798 (1.25ms)
+  - 799 (1.25ms)
+  - 800 (1.25ms)
+  - 801 (1.25ms)
+  - 802 (1.25ms)
+  - 803 (1.25ms)
+  - 804 (1.24ms)
+  - 805 (1.24ms)
+  - 806 (1.24ms)
+  - 807 (1.24ms)
+  - 808 (1.24ms)
+  - 809 (1.24ms)
+  - 810 (1.23ms)
+  - 811 (1.23ms)
+  - 812 (1.23ms)
+  - 813 (1.23ms)
+  - 814 (1.23ms)
+  - 815 (1.23ms)
+  - 816 (1.23ms)
+  - 817 (1.22ms)
+  - 818 (1.22ms)
+  - 819 (1.22ms)
+  - 820 (1.22ms)
+  - 821 (1.22ms)
+  - 822 (1.22ms)
+  - 823 (1.22ms)
+  - 824 (1.21ms)
+  - 825 (1.21ms)
+  - 826 (1.21ms)
+  - 827 (1.21ms)
+  - 828 (1.21ms)
+  - 829 (1.21ms)
+  - 830 (1.20ms)
+  - 831 (1.20ms)
+  - 832 (1.20ms)
+  - 833 (1.20ms)
+  - 834 (1.20ms)
+  - 835 (1.20ms)
+  - 836 (1.20ms)
+  - 837 (1.19ms)
+  - 838 (1.19ms)
+  - 839 (1.19ms)
+  - 840 (1.19ms)
+  - 841 (1.19ms)
+  - 842 (1.19ms)
+  - 843 (1.19ms)
+  - 844 (1.18ms)
+  - 845 (1.18ms)
+  - 846 (1.18ms)
+  - 847 (1.18ms)
+  - 848 (1.18ms)
+  - 849 (1.18ms)
+  - 850 (1.18ms)
+  - 851 (1.18ms)
+  - 852 (1.17ms)
+  - 853 (1.17ms)
+  - 854 (1.17ms)
+  - 855 (1.17ms)
+  - 856 (1.17ms)
+  - 857 (1.17ms)
+  - 858 (1.17ms)
+  - 859 (1.16ms)
+  - 860 (1.16ms)
+  - 861 (1.16ms)
+  - 862 (1.16ms)
+  - 863 (1.16ms)
+  - 864 (1.16ms)
+  - 865 (1.16ms)
+  - 866 (1.15ms)
+  - 867 (1.15ms)
+  - 868 (1.15ms)
+  - 869 (1.15ms)
+  - 870 (1.15ms)
+  - 871 (1.15ms)
+  - 872 (1.15ms)
+  - 873 (1.15ms)
+  - 874 (1.14ms)
+  - 875 (1.14ms)
+  - 876 (1.14ms)
+  - 877 (1.14ms)
+  - 878 (1.14ms)
+  - 879 (1.14ms)
+  - 880 (1.14ms)
+  - 881 (1.14ms)
+  - 882 (1.13ms)
+  - 883 (1.13ms)
+  - 884 (1.13ms)
+  - 885 (1.13ms)
+  - 886 (1.13ms)
+  - 887 (1.13ms)
+  - 888 (1.13ms)
+  - 889 (1.12ms)
+  - 890 (1.12ms)
+  - 891 (1.12ms)
+  - 892 (1.12ms)
+  - 893 (1.12ms)
+  - 894 (1.12ms)
+  - 895 (1.12ms)
+  - 896 (1.12ms)
+  - 897 (1.11ms)
+  - 898 (1.11ms)
+  - 899 (1.11ms)
+  - 900 (1.11ms)
+  - 901 (1.11ms)
+  - 902 (1.11ms)
+  - 903 (1.11ms)
+  - 904 (1.11ms)
+  - 905 (1.10ms)
+  - 906 (1.10ms)
+  - 907 (1.10ms)
+  - 908 (1.10ms)
+  - 909 (1.10ms)
+  - 910 (1.10ms)
+  - 911 (1.10ms)
+  - 912 (1.10ms)
+  - 913 (1.10ms)
+  - 914 (1.09ms)
+  - 915 (1.09ms)
+  - 916 (1.09ms)
+  - 917 (1.09ms)
+  - 918 (1.09ms)
+  - 919 (1.09ms)
+  - 920 (1.09ms)
+  - 921 (1.09ms)
+  - 922 (1.08ms)
+  - 923 (1.08ms)
+  - 924 (1.08ms)
+  - 925 (1.08ms)
+  - 926 (1.08ms)
+  - 927 (1.08ms)
+  - 928 (1.08ms)
+  - 929 (1.08ms)
+  - 930 (1.08ms)
+  - 931 (1.07ms)
+  - 932 (1.07ms)
+  - 933 (1.07ms)
+  - 934 (1.07ms)
+  - 935 (1.07ms)
+  - 936 (1.07ms)
+  - 937 (1.07ms)
+  - 938 (1.07ms)
+  - 939 (1.06ms)
+  - 940 (1.06ms)
+  - 941 (1.06ms)
+  - 942 (1.06ms)
+  - 943 (1.06ms)
+  - 944 (1.06ms)
+  - 945 (1.06ms)
+  - 946 (1.06ms)
+  - 947 (1.06ms)
+  - 948 (1.05ms)
+  - 949 (1.05ms)
+  - 950 (1.05ms)
+  - 951 (1.05ms)
+  - 952 (1.05ms)
+  - 953 (1.05ms)
+  - 954 (1.05ms)
+  - 955 (1.05ms)
+  - 956 (1.05ms)
+  - 957 (1.04ms)
+  - 958 (1.04ms)
+  - 959 (1.04ms)
+  - 960 (1.04ms)
+  - 961 (1.04ms)
+  - 962 (1.04ms)
+  - 963 (1.04ms)
+  - 964 (1.04ms)
+  - 965 (1.04ms)
+  - 966 (1.04ms)
+  - 967 (1.03ms)
+  - 968 (1.03ms)
+  - 969 (1.03ms)
+  - 970 (1.03ms)
+  - 971 (1.03ms)
+  - 972 (1.03ms)
+  - 973 (1.03ms)
+  - 974 (1.03ms)
+  - 975 (1.03ms)
+  - 976 (1.02ms)
+  - 977 (1.02ms)
+  - 978 (1.02ms)
+  - 979 (1.02ms)
+  - 980 (1.02ms)
+  - 981 (1.02ms)
+  - 982 (1.02ms)
+  - 983 (1.02ms)
+  - 984 (1.02ms)
+  - 985 (1.02ms)
+  - 986 (1.01ms)
+  - 987 (1.01ms)
+  - 988 (1.01ms)
+  - 989 (1.01ms)
+  - 990 (1.01ms)
+  - 991 (1.01ms)
+  - 992 (1.01ms)
+  - 993 (1.01ms)
+  - 994 (1.01ms)
+  - 995 (1.01ms)
+  - 996 (1.00ms)
+  - 997 (1.00ms)
+  - 998 (1.00ms)
+  - 999+ (<1.00ms)
+--- !u!1 &1137939539004846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224109760437875670}
+  - component: {fileID: 222275468427749098}
+  - component: {fileID: 114573574091444204}
+  m_Layer: 5
+  m_Name: PhysFPS (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224109760437875670
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137939539004846}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -56}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222275468427749098
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137939539004846}
+  m_CullTransparentMesh: 0
+--- !u!114 &114573574091444204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137939539004846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.6764706, b: 0.9509127, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'FixAVG:'
+--- !u!1 &1156728725443042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224239084986976180}
+  - component: {fileID: 222244144278678686}
+  - component: {fileID: 114136477695530754}
+  m_Layer: 5
+  m_Name: Max
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224239084986976180
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156728725443042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49, y: -28}
+  m_SizeDelta: {x: 378.42, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222244144278678686
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156728725443042}
+  m_CullTransparentMesh: 0
+--- !u!114 &114136477695530754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156728725443042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.006896496, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FPS
+--- !u!1 &1178023257356832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224712496210128278}
+  - component: {fileID: 222376128787113310}
+  - component: {fileID: 114096052574165896}
+  m_Layer: 5
+  m_Name: PhysRate (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224712496210128278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178023257356832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -42}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222376128787113310
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178023257356832}
+  m_CullTransparentMesh: 0
+--- !u!114 &114096052574165896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178023257356832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.44117647, g: 0.8381339, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'FixRate:'
+--- !u!1 &1231261920160284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224017663050097440}
+  - component: {fileID: 222712741571341924}
+  - component: {fileID: 223053353867537376}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224017663050097440
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231261920160284}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224162762527500846}
+  - {fileID: 224151502622032890}
+  - {fileID: 224239084986976180}
+  - {fileID: 224115918303089022}
+  - {fileID: 224156046991681212}
+  - {fileID: 224853938139738818}
+  - {fileID: 224874574535167212}
+  - {fileID: 224222274575079952}
+  - {fileID: 224712496210128278}
+  - {fileID: 224109760437875670}
+  m_Father: {fileID: 224221452225482132}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 52.2}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222712741571341924
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231261920160284}
+  m_CullTransparentMesh: 0
+--- !u!223 &223053353867537376
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231261920160284}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &1424023078521558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224162762527500846}
+  - component: {fileID: 222450415568799794}
+  - component: {fileID: 114571333611172312}
+  m_Layer: 5
+  m_Name: AVG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224162762527500846
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424023078521558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49, y: 0}
+  m_SizeDelta: {x: 378.42, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222450415568799794
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424023078521558}
+  m_CullTransparentMesh: 0
+--- !u!114 &114571333611172312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424023078521558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8896551, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FPS
+--- !u!1 &1531371933140940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224151502622032890}
+  - component: {fileID: 222830082401644246}
+  - component: {fileID: 114524354276376198}
+  m_Layer: 5
+  m_Name: Min
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224151502622032890
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531371933140940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49, y: -14}
+  m_SizeDelta: {x: 378.42, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222830082401644246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531371933140940}
+  m_CullTransparentMesh: 0
+--- !u!114 &114524354276376198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531371933140940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FPS
+--- !u!1 &1540639144055392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224222274575079952}
+  - component: {fileID: 222248964207899964}
+  - component: {fileID: 114364121247834656}
+  m_Layer: 5
+  m_Name: Max (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224222274575079952
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540639144055392}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -28}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222248964207899964
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540639144055392}
+  m_CullTransparentMesh: 0
+--- !u!114 &114364121247834656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540639144055392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0.006896496, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'MAX:'
+--- !u!1 &1566167346166468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224853938139738818}
+  - component: {fileID: 222512849017363842}
+  - component: {fileID: 114059935477735444}
+  m_Layer: 5
+  m_Name: AVG (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224853938139738818
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566167346166468}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222512849017363842
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566167346166468}
+  m_CullTransparentMesh: 0
+--- !u!114 &114059935477735444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566167346166468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.8896551, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'AVG:'
+--- !u!1 &1645168878607394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224156046991681212}
+  - component: {fileID: 222581374347879678}
+  - component: {fileID: 114821588659937904}
+  m_Layer: 5
+  m_Name: PhysFPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224156046991681212
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645168878607394}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49, y: -56}
+  m_SizeDelta: {x: 378.42, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222581374347879678
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645168878607394}
+  m_CullTransparentMesh: 0
+--- !u!114 &114821588659937904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645168878607394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.6764706, b: 0.9509127, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FPS
+--- !u!1 &1803429450367648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224874574535167212}
+  - component: {fileID: 222719141693194520}
+  - component: {fileID: 114212974676994818}
+  m_Layer: 5
+  m_Name: Min (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224874574535167212
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803429450367648}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -14}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222719141693194520
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803429450367648}
+  m_CullTransparentMesh: 0
+--- !u!114 &114212974676994818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803429450367648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'MIN:'
+--- !u!1 &1944755318766508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224115918303089022}
+  - component: {fileID: 222337231692101196}
+  - component: {fileID: 114626742301301008}
+  m_Layer: 5
+  m_Name: PhysRate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224115918303089022
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944755318766508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224017663050097440}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 49, y: -42}
+  m_SizeDelta: {x: 378.42, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &222337231692101196
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944755318766508}
+  m_CullTransparentMesh: 0
+--- !u!114 &114626742301301008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944755318766508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.44117647, g: 0.8381339, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FPS
