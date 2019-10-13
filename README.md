@@ -1,8 +1,6 @@
 # DOTSoftheDead
 
-[Intro]
-
-
+DOTS of the Dead is a DOTS sample game project that's meant to be an example of "real gameplay" implemented fully in DOTS. It is a simple local-multiplayer top-down zombie shooter.
 
 
 ## How to Play
@@ -38,7 +36,7 @@ This is handled in PlayerInputSystem.
 
 This system has a CreatePlayer function that spawns a Player entity, which holds a PlayerTag
 component, a GameplayInput component, and a buffer of associated input device IDs. It then
-uses the new input system’s callbacks to build arrays of all inputs with associated devices that
+uses the new input systemâ€™s callbacks to build arrays of all inputs with associated devices that
 were made during the frame. Finally, it launches a job whose purpose is to go fill the
 GameplayInput struct of each player with the inputs corresponding to the devices those players
 were given.
@@ -46,22 +44,22 @@ were given.
 We end up with a bunch of Player entities who all have their GameplayInputs components up
 to date.
 
-In order to use those inputs for character movement, weapon shooting, etc…. We use the
+In order to use those inputs for character movement, weapon shooting, etcâ€¦. We use the
 OwningPlayer component in combination with jobs whose purpose is to give an entity the
 inputs it needs based on its owning player entity. An example of this is the
 PlayerInputsToCharacterInputsJob in CharacterMoveSystem. This job will, for each
 character with an OwningPlayer component, find the associated player entity and feed the
-player’s inputs into the character movement components
+playerâ€™s inputs into the character movement components
 
 ### Character Movement
 The character movement system, used both by player characters and zombies, has two main
 components: CharacterInputs and Character.
 
 CharacterInputs stores the intention of the character: Move vector, look direction, whether
-we’re attacking or not.
+weâ€™re attacking or not.
 
 Character stores the characteristics of the character: Move speed, move sharpness, orientation
-sharpness, etc….
+sharpness, etcâ€¦.
 
 CharacterMoveSystem launches a job that, for each <Character, CharacterInputs,
 PhysicsVelocity, Rotation> entities, will translate character inputs and character data into a
@@ -78,12 +76,12 @@ Zombies are extremely simple, and require only the following systems.Each of tho
 will launch a job that will iterate on every zombie, every frame.
 
 AssignTargetClosestPlayerSystem finds the closest player to each zombie in a certain range,
-and assign them as it’s target
-AssignTargetRandomSystem if a zombie doesn’t have a player in it’s range as a target, this
+and assign them as itâ€™s target
+AssignTargetRandomSystem if a zombie doesnâ€™t have a player in itâ€™s range as a target, this
 system will choose a location around the zombie, and use it as a target. This will be the
-zombie’s destination until it reaches it, or a player comes in it’s range.
+zombieâ€™s destination until it reaches it, or a player comes in itâ€™s range.
 
-MoveTowardTargetSystem moves every zombie toward its target, at full speed if it’s a player,
+MoveTowardTargetSystem moves every zombie toward its target, at full speed if itâ€™s a player,
 slower (1/3) if not.
 
 ZombieAutoAttackSystem if the zombie has a player target and is close enough, it will change
@@ -101,7 +99,7 @@ bullet if needed
 - MeleeAttackJob same thing but for melee weapons
 
 ### Camera
-The Camera is a bit special because it’s not yet converted automatically to a DOTS entity. We
+The Camera is a bit special because itâ€™s not yet converted automatically to a DOTS entity. We
 use an orthographic Camera and the goal is to be able to move it and change its orthographic
 size so we can see all the players at the same time on screen.
 
